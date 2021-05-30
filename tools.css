@@ -1,0 +1,124 @@
+/* Global Styling */
+html, body {margin:0px; padding: 0px;}
+
+nav {
+    background-color: #34495e;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 999;
+}
+
+#logo {height: 80px; margin-left: 20px;}
+
+.wrapper {
+    padding: 50px 50px;
+    max-width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.right {float: right !important;}
+/* Image zoom on hover + Overlay colour */
+.parent {
+    width: 45%;
+    margin: 20px;
+    height: 300px;
+    border: 1px solid blue;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+  cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/* Several different images */
+.bg-one {background-image: url(https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2020/02/lenguaje-programacion-1859691.jpg?itok=PSYEVgtj);}
+.bg-two {background-image: url(https://elgrangestor.com/wp-content/uploads/2019/12/estudiar-para-ser-programador-2-1024x729.jpg);}
+.bg-three {background-image: url(https://www.internautas.org/graficos/Hacking-Etico.jpg);}
+.bg-four {background-image: url(https://i.blogs.es/4879f1/hacking/450_1000.jpg);}
+.bg-five {background-image: url(https://www.imagar.com/wp-content/uploads/2020/08/hacking_etico1-scaled.jpg);}
+.bg-six {background-image: url(https://hard2bit.com/blog/wp-content/uploads/2019/01/Ethical-Hacking.jpg);}
+
+
+a {
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    /*text-decoration: none;*/
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent {width: 100%; margin: 20px 0px}
+    .wrapper {padding: 20px 20px;}
+}
+
+
+
+
+.hello {display: none}
+
+body {
+
+    background: url(hacker.png);
+}
+
+
+
+
+
+
+
+
